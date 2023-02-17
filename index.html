@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Calcular preço entre gaslina e alcool">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular preço Gasolina</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Você já sabe quem é mais vantajoso, a gasolina ou álcool?</h1>
+        <img class="logo" src="./assets/logo.png" alt="logo da calculadora">
+        <h1 class="title">
+            Descubra agora mesmo qual é a melhor opção!
+        </h1>
+
+
+        <form onsubmit="calcular(event)" class="form">
+            <label>Álcool (preço por litro):</label>
+            <input id="alcool" class="input" type="number" placeholder="4.90" min="1" step="0.01" required>
+
+            <label>Gasolina (preço por litro):</label>
+            <input id="gasolina" class="input" type="number" placeholder="5.90" min="1" step="0.01" required>
+
+            <input class="button" type="submit" value="Calcular">
+        </form >
+
+        <section id="content-result" class="result hide">
+            <span id="text-result" >Compensa usar Álcool</span>
+            <span id="alcool-result">Álcool custa R$ 4.90</span>
+        </section>
+
+        <section id="content-result1" class="result1 hide">
+            <span id="text-result" >Compensa usar Gasolina</span>
+            <span id="gasolina-result">Gasolina custa R$ 4.90</span>
+        </section>
+
+    </main>
+
+    <div class="info">
+        <span class="tooltip">Veja como é feito o Calculo</span>
+        <a href="calculo.html">
+            <img class="info-img" src="./assets/info.png" alt="Veja como é feito o Calculo">
+        </a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
