@@ -6,7 +6,7 @@
 
 body{
     background-color: #22272e;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +95,10 @@ body{
 }
 
 .result:hover{
+    transform: scale(1.2);
+}
+
+.result1:hover{
     transform: scale(1.2);
 }
 
